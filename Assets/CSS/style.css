@@ -6,7 +6,7 @@
 }
 
 :root{
-  --primary-back-color: #cccccce8;
+  --primary-back-color: #cccccce8; 
   --secondary-back-color:#f1f1f1;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -67,7 +67,7 @@ a{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("../Image/mac.jpg");
+  background-image: url("../image/mac.jpg");
   height: 100vh;
   filter: grayscale(.5);
   display: flex;
