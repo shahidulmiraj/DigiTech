@@ -1,0 +1,502 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+
+:root{
+  --primary-back-color: #cccccce8;
+  --secondary-back-color:#f1f1f1;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-decoration: none;
+  font-weight: 100;
+}
+
+/* ------------------------------------------------------------------------------ */
+
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.8;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.container {
+  padding: 10% 3%;
+}
+/* ------------------------------------------------------------------------------ */
+/* navbar design */
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+}
+.nav-bar .menu {
+  list-style: none;
+  display: flex;
+}
+.logo img{
+  width: 80px;
+}
+.menu li, .logo{
+  padding: 16px;
+  cursor: pointer;
+}
+.menu li a, i{
+  font-size: 15px;
+}
+.menu li:hover, .logo:hover{
+  background-color: var(--primary-back-color);
+}
+.menu li i::before {
+  padding:0 5px 0 0;
+}
+/* ------------------------------------------------------------------------------ */
+/* banner */
+.main-banner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../Image/mac.jpg");
+  height: 100vh;
+  filter: grayscale(.5);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  position: relative;
+  padding-left: 3%;
+}
+
+h1{
+  line-height: 115px;
+  font-size: 64px;
+  padding-bottom: 20px;
+}
+.banner p {
+  line-height: 32px;
+  padding-bottom: 35px;
+}
+.banner a {
+  line-height: 32px;
+  padding: 16px 24px;
+  background-color: var(--primary-back-color);
+}
+.banner a:hover {
+  background-color: rgb(255, 255, 255, .9);
+}
+.different-logo {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  padding-left: 3%;
+  color: #7f8c8d;
+}
+.different-logo i:hover {
+  opacity: .7;
+}
+
+/* ------------------------------------------------------------------------------ */
+/* about design */
+.heading {
+  text-align: center;
+}
+h2{
+  font-size: 24px;
+}
+.heading p {
+  margin: 18px 0;
+}
+.detail {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+}
+.detail .about-card {
+  text-align: center;
+}
+.detail .about-card p{
+  font-size: 15px;
+}
+.detail .about-card i{
+  font-size: 350%;
+  margin-bottom: 16px;
+}
+.detail .about-card h3 {
+  margin: 18px 0;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* works section design */
+.works {
+  background-color: var(--secondary-back-color);
+}
+.works-all {
+  display: flex;
+  justify-content: space-between;
+}
+.works .mobile-img img{
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto; 
+  display: block;
+}
+.works-left {
+  padding-right: 10%;
+}
+.works-left h2{
+  margin: 10px 0;
+}
+.works-left p{
+  font-size: 15px;
+  margin: 15px 0;
+}
+.works-left a{
+  color: white;
+  font-size: 15px;
+}
+.works-left a {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: black;
+}
+
+.works-left a:hover{
+  background-color: var(--primary-back-color);
+  color: black;
+}
+.works-left i::before {
+  padding:0 5px 0 0;
+}
+
+
+/* -------------------------------------------------------------------------------- */
+/* team section design */
+.team-card {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 2px 5px 0px, rgba(0, 0, 0, 0.12) 0px 2px 10px 0px;
+  padding-bottom: 15px;
+}
+.detail .team-card img{
+  width:100%;
+  filter: grayscale(.8);
+}
+.team-info {
+  padding: 0 16px;
+}
+.team-info h3{
+  font-size: 24px;
+  margin: 10px 0;
+}
+.team-info h4{
+  font-size: 15px;
+  margin: 15px 0;
+  color: #7f8c8d;
+}
+.team-info p{
+  font-size: 15px;
+  margin: 15px 0;
+}
+.team-info button {
+  font-size: 15px;
+  cursor: pointer;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+}
+.team-info button:hover {
+  background-color: var(--primary-back-color);
+}
+
+/* ----------------------------------------------------------------------------- */
+.customer {
+  background-color: #616161;
+  padding: 64px 16px;
+  color: white;
+}
+.all-service {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.all-service span {
+  font-size: 36px;
+}
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+}
+
+/* ------------------------------------------------------- */
+/* work section design  */
+
+.galary {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding-top: 2%;
+}
+.galary img{
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+}
+.galary img:hover{
+  opacity: .7;
+  transform: scale(1.05);
+}
+
+
+/* ------------------------------------------------------------------------------------- */
+.skill {
+  background-color: var(--secondary-back-color);
+}
+.skill-meter i::before {
+  padding:0 16px 0 0;
+}
+.skill-meter p{
+  font-size: 15px;
+  letter-spacing: 4px;
+  margin: 15px 0;
+}
+.skill-meter .full {
+  background-color: #8b8b8b
+}
+.skill-all {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.skill-left {
+  padding-right: 10%;
+}
+.skill-meter .full .per-90, .per-85, .per-75{
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  background-color: #616161;
+  color: white;
+}
+.skill-meter .full .per-85{
+  width: 85%;
+}
+.skill-meter .full .per-75{
+  width: 75%;
+}
+
+/* -------------------------------------------------------------- */
+/* pricing section  */
+
+.price {
+  background-color: #616161;
+  color: white;
+}
+.pricing-detail {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding-top: 3%;
+}
+.pricing-detail li {
+  background-color: white;
+  list-style-type: none;
+  color: black;
+  padding: 16px;
+  border-bottom: 1px solid #dddddd;
+}
+.pricing-detail .price-card {
+  width: 100%;
+  text-align: center;
+}
+.pricing-detail .price-card:hover ul{
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,0.2), 0 4px 20px 0 rgba(0,0,0,0.19);
+}
+.price-card ul>:first-child {
+  background-color: black;
+  color: white;
+  padding: 32px 16px;
+  font-size: 24px;
+  margin-top: 15px;
+}
+.price-card ul>:last-child {
+  background-color: var(--secondary-back-color);
+  padding: 20px 0;
+}
+.pricing-detail li button {
+  font-size: 16px;
+  padding: 13px 26px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: .7s;
+}
+.pricing-detail li button:hover {
+  background-color: var(--primary-back-color);
+  color: black;
+}
+.price-card h3{
+  font-size: 30px;
+  margin: 10px 0;
+}
+.pricing-detail .special ul>:first-child{
+  background-color: rgb(244, 67, 54);
+  padding: 50px 0;
+  margin: 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* contact section style  */
+.contact {
+  background-color: var(--secondary-back-color)
+}
+.contact-list {
+  padding: 2% 0;
+  text-align: center;
+}
+.contact-list li{
+  list-style-type: none;
+  padding: 15px 0;
+}
+.contact-list li i{
+  font-size: 36px;
+}
+.contact li i::before {
+  padding:0 20px 0 0;
+}
+.contact button i::before {
+  padding:0 3px 0 0;
+}
+form input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 15px 0;
+  border: 1px solid #b1b6b7ab;
+}
+form button {
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border: none;
+  transition: .7s;
+}
+form button:hover {
+  background-color: var(--primary-back-color);
+  color: black;
+}
+
+/* -------------------------------------------------------------------- */
+/* map section */
+.map {
+  padding: 0 1%;
+  margin-bottom: 10%;
+}
+.map-image img {
+  filter: grayscale(.8);
+  max-width: 100%;
+  height: auto; 
+  display: block;
+}
+/* ----------------------------------------------------------------- */
+/* footer section design  */
+
+.footer {
+  text-align: center;
+  background-color: black;
+  padding: 5% 0;
+  color: white;
+}
+.footer .top-button i{
+  padding-right: 5px;
+}
+.footer .top-button {
+  background-color: white;
+  padding: 10px 20px;
+}
+.footer .top-button:hover{
+  background-color: var(--primary-back-color);
+}
+.footer .dif-logo {
+  margin: 25px 0;
+}
+.footer .dif-logo i:hover {
+  color: var(--primary-back-color);
+}
+.footer .dif-logo i{
+  font-size: 24px;
+}
+.footer .copyright a{
+  text-decoration: underline;
+  color: white;
+}
+.footer .copyright a:hover {
+  color: green;
+}
+/* ---------------------------------------------------------- */
+/* for mobile design  */
+
+@media screen and (max-width:600px) {
+  .menu  li{
+    display: none;
+  }
+  .nav-bar .logo{
+    margin: 0 auto;
+  }
+  .main-banner {
+    padding: 10%;
+  }
+  .main-banner h1 {
+    font-size: 36px;
+    line-height: 1.7;
+  }
+  .different-logo {
+    padding-left: 10%;
+  }
+  .container{
+    padding: 20% 10%;
+  }
+  .detail, .galary, .skill-all {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+  .galary {
+    gap:10px;
+  }
+  .works-all {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .all-service, .pricing-detail {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pricing-detail .special ul>:first-child {
+    scale: 1;
+  }
+  form button {
+    width: 100%;
+  }
+}
+@media screen and (min-width:601px) and (max-width:900px) {
+  .detail, .galary, .skill-all {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .galary {
+    gap:10px;
+  }
+}
